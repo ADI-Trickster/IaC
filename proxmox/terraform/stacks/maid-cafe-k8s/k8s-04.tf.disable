@@ -3,6 +3,7 @@
 resource "proxmox_virtual_environment_vm" "k8s_04" {
   name          = "k8s-04"
   node_name     = "matcha"
+  vm_id         = 243
   pool_id       = "Kubernetes"
   bios          = "ovmf"
   boot_order    = ["virtio0", "ide2", "net0"]
